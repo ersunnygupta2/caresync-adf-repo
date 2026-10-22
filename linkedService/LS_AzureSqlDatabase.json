@@ -1,0 +1,24 @@
+{
+	"name": "LS_AzureSqlDatabase",
+	"properties": {
+		"description": "Linked Service to connect to Azure SQL DB which is used to store tables for metadata driven framework ",
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "caresyncprojectserver.database.windows.net",
+			"database": "caresyncdb",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "ersunnygupta2",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "LS_AzureKeyVault",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "metadata-db-password"
+			}
+		}
+	}
+}
