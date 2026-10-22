@@ -1,0 +1,11 @@
+{
+	"name": "LS_AzureDataLakeStorage",
+	"properties": {
+		"description": "Linked Service to connect with ADLS caresyncprojectnew",
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://caresyncprojectnew.dfs.core.windows.net/"
+		}
+	}
+}
