@@ -110,7 +110,14 @@
 				"outputs": [
 					{
 						"referenceName": "DS_Parquet",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"container": "landing",
+							"folder": {
+								"value": "@concat(activity('Read Table Details').output.firstRow.source_system, '/', activity('Read Table Details').output.firstRow.source_table_name, '/', variables('start_time'))",
+								"type": "Expression"
+							}
+						}
 					}
 				]
 			}
