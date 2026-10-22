@@ -4,7 +4,7 @@
 		"activities": [
 			{
 				"name": "Read Table Details",
-				"description": "Read Table Details for the table id passed as paramter",
+				"description": "Read Table Details for the table id passed as parameter",
 				"type": "Lookup",
 				"dependsOn": [],
 				"policy": {
